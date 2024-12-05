@@ -100,3 +100,18 @@ Hệ thống tưới cây tự động sử dụng công nghệ IoT được thi
 
 ## Video demo:
 https://github.com/user-attachments/assets/280fb81e-116d-4afb-9965-f922740a47d6
+
+## Hướng Phát Triển Đề Tài
+**Tự Động Hóa Tưới Nước**: Áp dụng AI/ML để dự đoán nhu cầu tưới nước dựa trên dữ liệu lịch sử và thời tiết.
+
+**Tích Hợp Cảm Biến**: Thêm cảm biến nhiệt độ, độ ẩm không khí, và ánh sáng để tối ưu hóa việc tưới nước.
+
+**Nâng Cấp Giao Diện Dashboard**: Hiển thị thêm các thông số như pH đất, mức nước, và tùy chỉnh giao diện người dùng.
+
+**Ứng Dụng IoT**: Điều khiển và giám sát từ xa qua ứng dụng di động hoặc web, và gửi thông báo khi cần.
+
+**Tiết Kiệm Năng Lượng**: Tích hợp năng lượng mặt trời và tự động tắt thiết bị không cần thiết để tiết kiệm năng lượng.
+
+**Tối Ưu Hóa Hệ Thống**: Phân tích hiệu suất và cải tiến mô hình tưới nước để sử dụng tài nguyên hiệu quả hơn.
+
+**Bảo Mật**: Thêm tính năng xác thực người dùng và giám sát từ xa để tăng cường an ninh.
