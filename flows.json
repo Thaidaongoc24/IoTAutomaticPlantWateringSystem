@@ -1,0 +1,404 @@
+[
+    {
+        "id": "fccf868086d424b2",
+        "type": "tab",
+        "label": "IoTAutomaticPlantWateringSystem",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "563cad449bb99a63",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "isrgrootx1.pem",
+        "keyname": "",
+        "caname": "ca.crt",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "1a1c37f4a6c1147f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "ef52bcb9a2654471a549247e267f5bff.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "563cad449bb99a63",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d50f2b77b36a5b78",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "Plant Watering",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "Automatic Plant Watering System",
+        "icon": "Automatic Plant Watering System",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "88daf2fe7b1c7f33",
+        "type": "ui_spacer",
+        "z": "fccf868086d424b2",
+        "name": "spacer",
+        "group": "dashboard_group",
+        "order": 3,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "89908778fb27f7ed",
+        "type": "ui_spacer",
+        "z": "fccf868086d424b2",
+        "name": "spacer",
+        "group": "dashboard_group",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c3e7583bb7d60756",
+        "type": "ui_spacer",
+        "z": "fccf868086d424b2",
+        "name": "spacer",
+        "group": "dashboard_group",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f2d1eec8.4c8a58",
+        "type": "mqtt in",
+        "z": "fccf868086d424b2",
+        "name": "Soil Moisture",
+        "topic": "plant/soil_moisture",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1a1c37f4a6c1147f",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "f4b8664ddd61e3ef",
+                "783f249d752672f0"
+            ]
+        ]
+    },
+    {
+        "id": "22f36e89.2cfb2c",
+        "type": "ui_switch",
+        "z": "fccf868086d424b2",
+        "name": "Pump Switch",
+        "label": "Water NOW",
+        "tooltip": "",
+        "group": "dashboard_group",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "plant/pump_control",
+        "topicType": "str",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "ca924539.9a3d6"
+            ]
+        ]
+    },
+    {
+        "id": "ca924539.9a3d6",
+        "type": "mqtt out",
+        "z": "fccf868086d424b2",
+        "name": "Pump Control MQTT",
+        "topic": "plant/pump_control",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1a1c37f4a6c1147f",
+        "x": 580,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d9fbe3de.f65848",
+        "type": "ui_slider",
+        "z": "fccf868086d424b2",
+        "name": "Set Moisture Threshold",
+        "label": "Soil Moisture Threshold",
+        "tooltip": "",
+        "group": "dashboard_group",
+        "order": 7,
+        "width": 8,
+        "height": 2,
+        "passthru": true,
+        "outs": "all",
+        "topic": "plant/soil_moisture_threshold",
+        "topicType": "str",
+        "min": "0",
+        "max": "90",
+        "step": "1",
+        "className": "",
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "ce3d61e3.a05478",
+                "5420dbb24146fd44"
+            ]
+        ]
+    },
+    {
+        "id": "ce3d61e3.a05478",
+        "type": "mqtt out",
+        "z": "fccf868086d424b2",
+        "name": "Threshold MQTT",
+        "topic": "plant/soil_moisture_threshold",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1a1c37f4a6c1147f",
+        "x": 570,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f4b8664ddd61e3ef",
+        "type": "ui_gauge",
+        "z": "fccf868086d424b2",
+        "name": "Soil Moisture Gauge",
+        "group": "dashboard_group",
+        "order": 1,
+        "width": 8,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Soil Moisture",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ffc800",
+            "#50e600",
+            "#01a6f9"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 580,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "783f249d752672f0",
+        "type": "ui_chart",
+        "z": "fccf868086d424b2",
+        "name": "Soil Moisture History",
+        "group": "dashboard_group",
+        "order": 2,
+        "width": 8,
+        "height": 3,
+        "label": "Soil Moisture History",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e"
+        ],
+        "outputs": 1,
+        "x": 580,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5420dbb24146fd44",
+        "type": "ui_text",
+        "z": "fccf868086d424b2",
+        "group": "dashboard_group",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Moisture Threshold",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 400,
+        "wires": []
+    }
+]
